@@ -55,10 +55,10 @@
             agregarCursoToolStripMenuItem = new ToolStripMenuItem();
             editarCursoToolStripMenuItem = new ToolStripMenuItem();
             eliminarCursoToolStripMenuItem = new ToolStripMenuItem();
-            toolStripContainer1 = new ToolStripContainer();
-            panel2 = new Panel();
             reportesToolStripMenuItem = new ToolStripMenuItem();
             cursosInscritosPorEstudianteToolStripMenuItem = new ToolStripMenuItem();
+            toolStripContainer1 = new ToolStripContainer();
+            panel2 = new Panel();
             menuStrip1.SuspendLayout();
             toolStripContainer1.TopToolStripPanel.SuspendLayout();
             toolStripContainer1.SuspendLayout();
@@ -77,7 +77,7 @@
             menuStrip1.BackColor = Color.FromArgb(202, 240, 248);
             menuStrip1.Dock = DockStyle.None;
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { usuariosToolStripMenuItem, estudiantesToolStripMenuItem, inscripcionesToolStripMenuItem, profesoresToolStripMenuItem, cursosToolStripMenuItem, reportesToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { usuariosToolStripMenuItem, estudiantesToolStripMenuItem, profesoresToolStripMenuItem, cursosToolStripMenuItem, inscripcionesToolStripMenuItem, reportesToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(829, 28);
@@ -200,28 +200,28 @@
             // listaDeProfesoresToolStripMenuItem
             // 
             listaDeProfesoresToolStripMenuItem.Name = "listaDeProfesoresToolStripMenuItem";
-            listaDeProfesoresToolStripMenuItem.Size = new Size(216, 26);
+            listaDeProfesoresToolStripMenuItem.Size = new Size(224, 26);
             listaDeProfesoresToolStripMenuItem.Text = "Lista de Profesores";
             listaDeProfesoresToolStripMenuItem.Click += listaDeProfesoresToolStripMenuItem_Click;
             // 
             // agregarProfesorToolStripMenuItem
             // 
             agregarProfesorToolStripMenuItem.Name = "agregarProfesorToolStripMenuItem";
-            agregarProfesorToolStripMenuItem.Size = new Size(216, 26);
+            agregarProfesorToolStripMenuItem.Size = new Size(224, 26);
             agregarProfesorToolStripMenuItem.Text = "Agregar Profesor";
             agregarProfesorToolStripMenuItem.Click += agregarProfesorToolStripMenuItem_Click;
             // 
             // editarProfesorToolStripMenuItem
             // 
             editarProfesorToolStripMenuItem.Name = "editarProfesorToolStripMenuItem";
-            editarProfesorToolStripMenuItem.Size = new Size(216, 26);
+            editarProfesorToolStripMenuItem.Size = new Size(224, 26);
             editarProfesorToolStripMenuItem.Text = "Editar Profesor";
             editarProfesorToolStripMenuItem.Click += editarProfesorToolStripMenuItem_Click;
             // 
             // eliminarProfesorToolStripMenuItem
             // 
             eliminarProfesorToolStripMenuItem.Name = "eliminarProfesorToolStripMenuItem";
-            eliminarProfesorToolStripMenuItem.Size = new Size(216, 26);
+            eliminarProfesorToolStripMenuItem.Size = new Size(224, 26);
             eliminarProfesorToolStripMenuItem.Text = "Eliminar Profesor";
             eliminarProfesorToolStripMenuItem.Click += eliminarProfesorToolStripMenuItem_Click;
             // 
@@ -235,30 +235,44 @@
             // listaDeCursosToolStripMenuItem
             // 
             listaDeCursosToolStripMenuItem.Name = "listaDeCursosToolStripMenuItem";
-            listaDeCursosToolStripMenuItem.Size = new Size(190, 26);
+            listaDeCursosToolStripMenuItem.Size = new Size(224, 26);
             listaDeCursosToolStripMenuItem.Text = "Lista de Cursos";
             listaDeCursosToolStripMenuItem.Click += listaDeCursosToolStripMenuItem_Click;
             // 
             // agregarCursoToolStripMenuItem
             // 
             agregarCursoToolStripMenuItem.Name = "agregarCursoToolStripMenuItem";
-            agregarCursoToolStripMenuItem.Size = new Size(190, 26);
+            agregarCursoToolStripMenuItem.Size = new Size(224, 26);
             agregarCursoToolStripMenuItem.Text = "Agregar Curso";
             agregarCursoToolStripMenuItem.Click += agregarCursoToolStripMenuItem_Click;
             // 
             // editarCursoToolStripMenuItem
             // 
             editarCursoToolStripMenuItem.Name = "editarCursoToolStripMenuItem";
-            editarCursoToolStripMenuItem.Size = new Size(190, 26);
+            editarCursoToolStripMenuItem.Size = new Size(224, 26);
             editarCursoToolStripMenuItem.Text = "Editar Curso";
             editarCursoToolStripMenuItem.Click += editarCursoToolStripMenuItem_Click;
             // 
             // eliminarCursoToolStripMenuItem
             // 
             eliminarCursoToolStripMenuItem.Name = "eliminarCursoToolStripMenuItem";
-            eliminarCursoToolStripMenuItem.Size = new Size(190, 26);
+            eliminarCursoToolStripMenuItem.Size = new Size(224, 26);
             eliminarCursoToolStripMenuItem.Text = "Eliminar Curso";
             eliminarCursoToolStripMenuItem.Click += eliminarCursoToolStripMenuItem_Click;
+            // 
+            // reportesToolStripMenuItem
+            // 
+            reportesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { cursosInscritosPorEstudianteToolStripMenuItem });
+            reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
+            reportesToolStripMenuItem.Size = new Size(82, 24);
+            reportesToolStripMenuItem.Text = "Reportes";
+            // 
+            // cursosInscritosPorEstudianteToolStripMenuItem
+            // 
+            cursosInscritosPorEstudianteToolStripMenuItem.Name = "cursosInscritosPorEstudianteToolStripMenuItem";
+            cursosInscritosPorEstudianteToolStripMenuItem.Size = new Size(293, 26);
+            cursosInscritosPorEstudianteToolStripMenuItem.Text = "Cursos Inscritos por Estudiante";
+            cursosInscritosPorEstudianteToolStripMenuItem.Click += cursosInscritosPorEstudianteToolStripMenuItem_Click;
             // 
             // toolStripContainer1
             // 
@@ -287,20 +301,6 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(825, 521);
             panel2.TabIndex = 3;
-            // 
-            // reportesToolStripMenuItem
-            // 
-            reportesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { cursosInscritosPorEstudianteToolStripMenuItem });
-            reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
-            reportesToolStripMenuItem.Size = new Size(82, 24);
-            reportesToolStripMenuItem.Text = "Reportes";
-            // 
-            // cursosInscritosPorEstudianteToolStripMenuItem
-            // 
-            cursosInscritosPorEstudianteToolStripMenuItem.Name = "cursosInscritosPorEstudianteToolStripMenuItem";
-            cursosInscritosPorEstudianteToolStripMenuItem.Size = new Size(293, 26);
-            cursosInscritosPorEstudianteToolStripMenuItem.Text = "Cursos Inscritos por Estudiante";
-            cursosInscritosPorEstudianteToolStripMenuItem.Click += cursosInscritosPorEstudianteToolStripMenuItem_Click;
             // 
             // frm_dashboard
             // 

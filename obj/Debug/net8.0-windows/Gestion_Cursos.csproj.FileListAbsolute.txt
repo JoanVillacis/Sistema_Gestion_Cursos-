@@ -330,3 +330,4 @@ C:\Users\USUARIO\source\repos\Clase POO II\Semana 9\Copia\Gestion_Cursos\obj\Deb
 C:\Users\USUARIO\source\repos\Clase POO II\Semana 9\Copia\Gestion_Cursos\obj\Debug\net8.0-windows\Gestion_Cursos.genruntimeconfig.cache
 C:\Users\USUARIO\source\repos\Clase POO II\Semana 9\Copia\Gestion_Cursos\obj\Debug\net8.0-windows\ref\Gestion_Cursos.dll
 C:\Users\USUARIO\source\repos\Clase POO II\Semana 9\Copia\Gestion_Cursos\bin\Debug\net8.0-windows\Views\Reportes\rpt_inscripciones_estudiantes.rdlc
+C:\Users\USUARIO\source\repos\Clase POO II\Semana 9\Copia\Gestion_Cursos\obj\Debug\net8.0-windows\Gestion_Cursos.sourcelink.json
