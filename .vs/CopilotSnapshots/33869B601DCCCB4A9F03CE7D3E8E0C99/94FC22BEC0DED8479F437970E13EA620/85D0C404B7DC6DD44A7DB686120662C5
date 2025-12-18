@@ -1,0 +1,55 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Gestion_Cursos.Views.Profesores
+{
+    public partial class frm_agregar_Profesor : Form
+    {
+        public frm_agregar_Profesor()
+        {
+            InitializeComponent();
+        }
+
+        private void frm_agregar_Profesor_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtp_Fecha_Nacimiento_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_Correo_Leave(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_Cedula_Leave(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Guardar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Cancelar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Salir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+    }
+}

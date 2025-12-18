@@ -1,0 +1,11 @@
+﻿
+using Gestion_Cursos.Data;
+
+namespace Gestion_Cursos.Controllers
+{
+    public class Estudiante_Controller
+    {
+        private readonly Gestion_Curso_DbContext _Estudiante_DBContext = new Gestion_Curso_DbContext();
+
+    }
+}

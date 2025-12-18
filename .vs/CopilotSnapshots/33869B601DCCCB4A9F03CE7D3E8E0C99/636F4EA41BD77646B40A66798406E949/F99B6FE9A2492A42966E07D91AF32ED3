@@ -1,0 +1,135 @@
+﻿using Gestion_Cursos.Controllers;
+using Gestion_Cursos.Models;
+using System;
+using System.Text.RegularExpressions;
+using System.Windows.Forms;
+
+namespace Gestion_Cursos.Views.Profesores
+{
+    public partial class frm_agregar_Profesor : Form
+    {
+        private readonly Profesor_Controller _profesorController = new Profesor_Controller();
+        private readonly Auth_Controller _authController = new Auth_Controller();
+
+        public frm_agregar_Profesor()
+        {
+            InitializeComponent();
+        }
+
+        private void frm_agregar_Profesor_Load(object sender, EventArgs e)
+        {
+            // inicializaciones si se requieren
+        }
+
+        private void dtp_Fecha_Nacimiento_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_Correo_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txt_Correo.Text)) return;
+            if (!Regex.IsMatch(txt_Correo.Text, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+            {
+                MessageBox.Show("El correo no tiene un formato válido", "Correo inválido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txt_Correo.Text = string.Empty;
+                txt_Correo.Focus();
+                return;
+            }
+            // Verificar duplicado
+            if (_profesorController.EmailExists(txt_Correo.Text.Trim()))
+            {
+                MessageBox.Show("El correo ya se encuentra registrado", "Correo duplicado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txt_Correo.Text = string.Empty;
+                txt_Correo.Focus();
+            }
+        }
+
+        private void txt_Cedula_Leave(object sender, EventArgs e)
+        {
+            var ced = txt_Cedula.Text.Trim();
+            if (string.IsNullOrWhiteSpace(ced)) return;
+            // validar formato solo dígitos
+            if (ced.Length != 10 || !long.TryParse(ced, out _))
+            {
+                MessageBox.Show("La cédula debe tener 10 dígitos", "Cédula inválida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txt_Cedula.Focus();
+                return;
+            }
+            // Verificar algoritmo con Auth_Controller
+            if (!_authController.VerificaCedula(ced.ToCharArray()))
+            {
+                MessageBox.Show("Cédula inválida según algoritmo", "Cédula inválida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txt_Cedula.Focus();
+                return;
+            }
+            // Verificar duplicado
+            if (_profesorController.CedulaExists(ced))
+            {
+                MessageBox.Show("La cédula ya se encuentra registrada", "Cédula duplicada", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txt_Cedula.Text = string.Empty;
+                txt_Cedula.Focus();
+            }
+        }
+
+        private void btn_Guardar_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txt_Nombres.Text) || string.IsNullOrWhiteSpace(txt_Apellidos.Text))
+            {
+                MessageBox.Show("Debe completar nombres y apellidos", "Datos incompletos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(txt_Cedula.Text))
+            {
+                MessageBox.Show("Debe ingresar la cédula", "Datos incompletos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txt_Cedula.Focus();
+                return;
+            }
+
+            var profesor = new Profesore
+            {
+                Cedula = txt_Cedula.Text.Trim(),
+                Nombre = txt_Nombres.Text.Trim(),
+                Apellido = txt_Apellidos.Text.Trim(),
+                FechaNacimiento = dtp_Fecha_Nacimiento.Value.Date,
+                Genero = txt_Genero.Text.Trim(),
+                Ciudad = txt_Ciudad.Text.Trim(),
+                Direccion = txt_Direccion.Text.Trim(),
+                Email = txt_Correo.Text.Trim(),
+                Telefono = txt_Telefono.Text.Trim(),
+                Especialidad = txt_Especialidad.Text.Trim(),
+                Estado = true
+            };
+
+            var res = _profesorController.insertar(profesor);
+            if (res == "ok")
+            {
+                MessageBox.Show("Profesor guardado correctamente.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show(res, "Error al guardar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btn_Cancelar_Click(object sender, EventArgs e)
+        {
+            txt_Nombres.Text = string.Empty;
+            txt_Apellidos.Text = string.Empty;
+            txt_Cedula.Text = string.Empty;
+            txt_Correo.Text = string.Empty;
+            txt_Genero.Text = string.Empty;
+            txt_Ciudad.Text = string.Empty;
+            txt_Direccion.Text = string.Empty;
+            txt_Telefono.Text = string.Empty;
+            txt_Especialidad.Text = string.Empty;
+            dtp_Fecha_Nacimiento.Value = DateTime.Now;
+        }
+
+        private void btn_Salir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+    }
+}

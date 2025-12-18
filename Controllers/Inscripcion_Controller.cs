@@ -1,0 +1,176 @@
+﻿using Gestion_Cursos.Data;
+using Gestion_Cursos.Models;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Windows.Forms;
+
+namespace Gestion_Cursos.Controllers
+{
+    public class Inscripcion_Controller
+    {
+        private readonly Gestion_Curso_DbContext _Inscripcion_DbContext = new Gestion_Curso_DbContext();
+
+        public List<Inscripcione> todos()
+        {
+            try
+            {
+                return _Inscripcion_DbContext.Inscripciones
+                    .Include(i => i.Estudiante)
+                    .Include(i => i.Curso)
+                    .AsNoTracking()
+                    .Where(i => i.Estado == true)
+                    .ToList();
+            }
+            catch (Exception ex)
+            {
+                var msg = ex.InnerException?.Message ?? ex.Message;
+                MessageBox.Show(msg, "Error al obtener inscripciones", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return new List<Inscripcione>();
+            }
+        }
+
+        public Inscripcione uno(int id)
+        {
+            try
+            {
+                return _Inscripcion_DbContext.Inscripciones
+                    .Include(i => i.Estudiante)
+                    .Include(i => i.Curso)
+                    .AsNoTracking()
+                    .FirstOrDefault(i => i.InscripcionId == id && i.Estado == true);
+            }
+            catch (Exception ex)
+            {
+                var msg = ex.InnerException?.Message ?? ex.Message;
+                MessageBox.Show(msg, "Error al obtener inscripcion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return null;
+            }
+        }
+
+        public string insertar(Inscripcione inscripcion)
+        {
+            if (inscripcion == null)
+            {
+                return "Debe completar las cajas de texto para guardar la inscripción";
+            }
+
+            try
+            {
+                // Verificar que estudiante y curso existan y estén activos
+                var estudiante = _Inscripcion_DbContext.Estudiantes.FirstOrDefault(e => e.EstudianteId == inscripcion.EstudianteId && e.Estado == true);
+                if (estudiante == null)
+                    return "El estudiante especificado no existe o no está activo";
+
+                var curso = _Inscripcion_DbContext.Cursos.FirstOrDefault(c => c.CursoId == inscripcion.CursoId && c.Estado == true);
+                if (curso == null)
+                    return "El curso especificado no existe o no está activo";
+
+                // Evitar inscripciones duplicadas
+                bool existe = _Inscripcion_DbContext.Inscripciones.Any(i => i.EstudianteId == inscripcion.EstudianteId && i.CursoId == inscripcion.CursoId && i.Estado == true);
+                if (existe)
+                    return "El estudiante ya está inscrito en ese curso";
+
+                // Asegurar fecha de inscripción si no viene
+                if (!inscripcion.FechaInscripcion.HasValue)
+                    inscripcion.FechaInscripcion = DateTime.Now;
+
+                inscripcion.Estado = true;
+
+                _Inscripcion_DbContext.Inscripciones.Add(inscripcion);
+                _Inscripcion_DbContext.SaveChanges();
+
+                return "ok";
+            }
+            catch (Exception ex)
+            {
+                var msg = ex.InnerException?.Message ?? ex.Message;
+                return msg;
+            }
+        }
+
+        public string actualizar(Inscripcione inscripcion)
+        {
+            if (inscripcion == null)
+            {
+                return "Debe completar las cajas de texto para actualizar la inscripción";
+            }
+
+            try
+            {
+                var existente = _Inscripcion_DbContext.Inscripciones.FirstOrDefault(i => i.InscripcionId == inscripcion.InscripcionId);
+                if (existente == null)
+                {
+                    return "La inscripción no fue encontrada";
+                }
+
+                // Si cambian estudiante o curso, verificar existencia y duplicados
+                if (inscripcion.EstudianteId != existente.EstudianteId)
+                {
+                    var estudiante = _Inscripcion_DbContext.Estudiantes.FirstOrDefault(e => e.EstudianteId == inscripcion.EstudianteId && e.Estado == true);
+                    if (estudiante == null) return "El estudiante especificado no existe o no está activo";
+                }
+                if (inscripcion.CursoId != existente.CursoId)
+                {
+                    var curso = _Inscripcion_DbContext.Cursos.FirstOrDefault(c => c.CursoId == inscripcion.CursoId && c.Estado == true);
+                    if (curso == null) return "El curso especificado no existe o no está activo";
+                }
+
+                // Verificar que no genere duplicado
+                bool dup = _Inscripcion_DbContext.Inscripciones.Any(i => i.InscripcionId != inscripcion.InscripcionId && i.EstudianteId == inscripcion.EstudianteId && i.CursoId == inscripcion.CursoId && i.Estado == true);
+                if (dup) return "Ya existe una inscripción para ese estudiante y curso";
+
+                // Actualizar campos
+                existente.EstudianteId = inscripcion.EstudianteId;
+                existente.CursoId = inscripcion.CursoId;
+                if (inscripcion.FechaInscripcion.HasValue) existente.FechaInscripcion = inscripcion.FechaInscripcion;
+                if (inscripcion.Estado.HasValue) existente.Estado = inscripcion.Estado;
+
+                _Inscripcion_DbContext.SaveChanges();
+
+                return "ok";
+            }
+            catch (Exception ex)
+            {
+                var msg = ex.InnerException?.Message ?? ex.Message;
+                return msg;
+            }
+        }
+
+        public string eliminar(int id)
+        {
+            try
+            {
+                var existente = _Inscripcion_DbContext.Inscripciones.FirstOrDefault(i => i.InscripcionId == id);
+                if (existente == null)
+                {
+                    return "La inscripción no fue encontrada";
+                }
+
+                existente.Estado = false;
+                _Inscripcion_DbContext.SaveChanges();
+                return "ok";
+            }
+            catch (Exception ex)
+            {
+                var msg = ex.InnerException?.Message ?? ex.Message;
+                return msg;
+            }
+        }
+
+        public bool ExisteInscripcion(int estudianteId, int cursoId)
+        {
+            try
+            {
+                return _Inscripcion_DbContext.Inscripciones.Any(i => i.EstudianteId == estudianteId && i.CursoId == cursoId && i.Estado == true);
+            }
+            catch (Exception ex)
+            {
+                var msg = ex.InnerException?.Message ?? ex.Message;
+                MessageBox.Show(msg, "Error al verificar inscripción", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+﻿
+using Gestion_Cursos.Data;
+
+namespace Gestion_Cursos.Controllers
+{
+    public class Inscripcion_Controller
+    {
+        private readonly Gestion_Curso_DbContext _Inscripcion_DbContext = new Gestion_Curso_DbContext();
+    }
+}

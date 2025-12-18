@@ -1,0 +1,143 @@
+﻿using Gestion_Cursos.Data;
+using Gestion_Cursos.Models;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Windows.Forms;
+
+namespace Gestion_Cursos.Controllers
+{
+    public class Curso_Controller
+    {
+        private readonly Gestion_Curso_DbContext _Curso_DbContext = new Gestion_Curso_DbContext();
+
+        public List<Curso> todos()
+        {
+            try
+            {
+                return _Curso_DbContext.Cursos
+                    .Include(c => c.Profesor)
+                    .Include(c => c.Inscripciones)
+                    .AsNoTracking()
+                    .Where(c => c.Estado == true)
+                    .ToList();
+            }
+            catch (Exception ex)
+            {
+                var msg = ex.InnerException?.Message ?? ex.Message;
+                MessageBox.Show(msg, "Error al obtener cursos", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return new List<Curso>();
+            }
+        }
+
+        public Curso uno(int id)
+        {
+            try
+            {
+                return _Curso_DbContext.Cursos
+                    .Include(c => c.Profesor)
+                    .Include(c => c.Inscripciones)
+                    .AsNoTracking()
+                    .FirstOrDefault(c => c.CursoId == id && c.Estado == true);
+            }
+            catch (Exception ex)
+            {
+                var msg = ex.InnerException?.Message ?? ex.Message;
+                MessageBox.Show(msg, "Error al obtener curso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return null;
+            }
+        }
+
+        public string insertar(Curso curso)
+        {
+            if (curso == null) return "Debe completar las cajas de texto para guardar el curso";
+
+            try
+            {
+                if (!string.IsNullOrWhiteSpace(curso.NombreCurso) && NombreExists(curso.NombreCurso))
+                {
+                    return "Ya existe un curso con ese nombre";
+                }
+
+                _Curso_DbContext.Cursos.Add(curso);
+                _Curso_DbContext.SaveChanges();
+                return "ok";
+            }
+            catch (Exception ex)
+            {
+                var msg = ex.InnerException?.Message ?? ex.Message;
+                return msg;
+            }
+        }
+
+        public string actualizar(Curso curso)
+        {
+            if (curso == null) return "Debe completar las cajas de texto para actualizar el curso";
+
+            try
+            {
+                var existente = _Curso_DbContext.Cursos.FirstOrDefault(c => c.CursoId == curso.CursoId);
+                if (existente == null) return "El curso no fue encontrado";
+
+                if (!string.IsNullOrWhiteSpace(curso.NombreCurso) && curso.NombreCurso != existente.NombreCurso && NombreExists(curso.NombreCurso))
+                {
+                    return "Ya existe un curso con ese nombre";
+                }
+
+                existente.NombreCurso = curso.NombreCurso;
+                existente.Descripcion = curso.Descripcion;
+                existente.Horario = curso.Horario;
+                existente.ProfesorId = curso.ProfesorId;
+                if (curso.Estado.HasValue) existente.Estado = curso.Estado;
+
+                _Curso_DbContext.SaveChanges();
+                return "ok";
+            }
+            catch (Exception ex)
+            {
+                var msg = ex.InnerException?.Message ?? ex.Message;
+                return msg;
+            }
+        }
+
+        public string eliminar(int id)
+        {
+            try
+            {
+                var existente = _Curso_DbContext.Cursos.FirstOrDefault(c => c.CursoId == id);
+                if (existente == null) return "El curso no fue encontrado";
+
+                bool tieneInscripcionesActivas = _Curso_DbContext.Inscripciones.Any(i => i.CursoId == id && i.Estado == true);
+                if (tieneInscripcionesActivas)
+                {
+                    return "No se puede eliminar el curso porque tiene inscripciones activas asociadas.";
+                }
+
+                existente.Estado = false;
+                _Curso_DbContext.SaveChanges();
+                return "ok";
+            }
+            catch (Exception ex)
+            {
+                var msg = ex.InnerException?.Message ?? ex.Message;
+                return msg;
+            }
+        }
+
+        public bool NombreExists(string nombre)
+        {
+            try
+            {
+                if (string.IsNullOrWhiteSpace(nombre)) return false;
+                return _Curso_DbContext.Cursos.Any(c => c.NombreCurso == nombre);
+            }
+            catch (Exception ex)
+            {
+                var msg = ex.InnerException?.Message ?? ex.Message;
+                MessageBox.Show(msg, "Error al verificar nombre de curso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+        }
+    }
+}

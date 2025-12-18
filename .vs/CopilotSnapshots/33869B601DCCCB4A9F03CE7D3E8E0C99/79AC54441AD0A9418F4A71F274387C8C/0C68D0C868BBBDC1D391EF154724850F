@@ -1,0 +1,117 @@
+﻿using Gestion_Cursos.Controllers;
+using Gestion_Cursos.Models;
+using System;
+using System.Text.RegularExpressions;
+using System.Windows.Forms;
+
+namespace Gestion_Cursos.Views.Usuarios
+{
+    public partial class frm_editar_Usuario : Form
+    {
+        private readonly Usuario_Controller _usuarioController = new Usuario_Controller();
+        private Usuario _usuarioActual;
+
+        public frm_editar_Usuario()
+        {
+            InitializeComponent();
+            CargarRoles();
+        }
+
+        private void CargarRoles()
+        {
+            cmb_Rol.Items.Clear();
+            cmb_Rol.Items.Add("Secretaria");
+            cmb_Rol.Items.Add("Administrador");
+            cmb_Rol.SelectedIndex =0;
+        }
+
+        public void CargarUsuario(int id)
+        {
+            _usuarioActual = _usuarioController.uno(id);
+            if (_usuarioActual == null)
+            {
+                MessageBox.Show("Usuario no encontrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Close();
+                return;
+            }
+
+            txt_Nombres.Text = _usuarioActual.Nombre;
+            txt_Apellidos.Text = _usuarioActual.Apellido;
+            txt_Correo.Text = _usuarioActual.Credenciale?.Correo ?? string.Empty;
+            txt_Contrasenia.Text = _usuarioActual.Credenciale?.Contrasenia ?? string.Empty;
+            var rol = _usuarioActual.Credenciale?.Rol;
+            if (!string.IsNullOrWhiteSpace(rol) && cmb_Rol.Items.Contains(rol))
+                cmb_Rol.SelectedItem = rol;
+        }
+
+        private void btn_Guardar_Click(object sender, EventArgs e)
+        {
+            if (_usuarioActual == null)
+            {
+                MessageBox.Show("No hay usuario cargado para guardar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txt_Nombres.Text) || string.IsNullOrWhiteSpace(txt_Apellidos.Text))
+            {
+                MessageBox.Show("Debe completar nombres y apellidos", "Datos incompletos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txt_Correo.Text) || !Regex.IsMatch(txt_Correo.Text, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+            {
+                MessageBox.Show("Ingrese un correo válido", "Correo inválido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txt_Correo.Focus();
+                return;
+            }
+
+            // Actualizar objeto
+            _usuarioActual.Nombre = txt_Nombres.Text.Trim();
+            _usuarioActual.Apellido = txt_Apellidos.Text.Trim();
+            if (_usuarioActual.Credenciale == null)
+            {
+                _usuarioActual.Credenciale = new Credenciale();
+            }
+            _usuarioActual.Credenciale.Correo = txt_Correo.Text.Trim();
+            _usuarioActual.Credenciale.Contrasenia = txt_Contrasenia.Text.Trim();
+            _usuarioActual.Credenciale.Rol = cmb_Rol.SelectedItem?.ToString() ?? "Secretaria";
+
+            var res = _usuarioController.actualizar(_usuarioActual);
+            if (res == "ok")
+            {
+                MessageBox.Show("Usuario actualizado correctamente.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show(res, "Error al actualizar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btn_Cancelar_Click(object sender, EventArgs e)
+        {
+            if (_usuarioActual != null)
+            {
+                txt_Nombres.Text = _usuarioActual.Nombre;
+                txt_Apellidos.Text = _usuarioActual.Apellido;
+                txt_Correo.Text = _usuarioActual.Credenciale?.Correo ?? string.Empty;
+                txt_Contrasenia.Text = _usuarioActual.Credenciale?.Contrasenia ?? string.Empty;
+            }
+        }
+
+        private void btn_Salir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void txt_Correo_Leave(object sender, EventArgs e)
+        {
+            if (!Regex.IsMatch(txt_Correo.Text, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+            {
+                txt_Correo.Text = string.Empty;
+                txt_Correo.Focus();
+                MessageBox.Show("El correo no tiene un formato válido", "Correo inválido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+    }
+}

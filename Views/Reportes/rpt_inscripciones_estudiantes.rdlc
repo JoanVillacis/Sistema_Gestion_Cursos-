@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Tablix Name="Tablix3">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn>
+              <Width>3.25353cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>3.25353cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>3.25353cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>3.25353cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>3.25353cm</Width>
+            </TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>1.06567cm</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox13">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Nombre del Estudiante</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox13</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox15">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Cédula del Estudiante</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox15</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox17">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Nombre del Curso</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox17</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox19">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Nombre del Profesor</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox19</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox21">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Fecha de Inscripción </Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox21</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+            <TablixRow>
+              <Height>1.06567cm</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="NombreEstudiante">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!NombreEstudiante.Value</Value>
+                              <Style>
+                                <Color>Teal</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>NombreEstudiante</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="CedulaEstudiante">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!CedulaEstudiante.Value</Value>
+                              <Style>
+                                <Color>Teal</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>CedulaEstudiante</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="NombreCurso">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!NombreCurso.Value</Value>
+                              <Style>
+                                <Color>Teal</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>NombreCurso</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="NombreProfesor">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!NombreProfesor.Value</Value>
+                              <Style>
+                                <Color>Teal</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>NombreProfesor</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="FechaInscripcion">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!FechaInscripcion.Value</Value>
+                              <Style>
+                                <Color>Teal</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>FechaInscripcion</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember>
+              <KeepWithGroup>After</KeepWithGroup>
+            </TablixMember>
+            <TablixMember>
+              <Group Name="Detalles" />
+            </TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <DataSetName>dts_Cursos</DataSetName>
+        <Top>0.37253cm</Top>
+        <Left>0.60537cm</Left>
+        <Height>2.13134cm</Height>
+        <Width>16.26765cm</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Tablix>
+    </ReportItems>
+    <Height>1.2in</Height>
+    <Style />
+  </Body>
+  <Width>7.16793in</Width>
+  <Page>
+    <PageHeader>
+      <Height>1.39587cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="Textbox1">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Reportes de cursos inscritos por estudiante</Value>
+                  <Style>
+                    <FontWeight>Bold</FontWeight>
+                    <Color>Blue</Color>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox1</rd:DefaultName>
+          <Top>0.42192cm</Top>
+          <Left>4.87532cm</Left>
+          <Height>0.6cm</Height>
+          <Width>7.91867cm</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageHeader>
+    <PageFooter>
+      <Height>2.76267cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Image Name="Image2">
+          <Source>Embedded</Source>
+          <Value>result_school_experiment_science_test_icon_220061</Value>
+          <Sizing>FitProportional</Sizing>
+          <Top>0.64883cm</Top>
+          <Left>15.9512cm</Left>
+          <Height>1.5cm</Height>
+          <Width>1.5cm</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </Image>
+      </ReportItems>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageFooter>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <LeftMargin>2cm</LeftMargin>
+    <RightMargin>2cm</RightMargin>
+    <TopMargin>2cm</TopMargin>
+    <BottomMargin>2cm</BottomMargin>
+    <ColumnSpacing>0.13cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="ds_cursos">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>148fba79-7334-432a-9e5f-37c8f451fe08</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="dts_Cursos">
+      <Query>
+        <DataSourceName>ds_cursos</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="NombreEstudiante">
+          <DataField>NombreEstudiante</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CedulaEstudiante">
+          <DataField>CedulaEstudiante</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NombreCurso">
+          <DataField>NombreCurso</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NombreProfesor">
+          <DataField>NombreProfesor</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FechaInscripcion">
+          <DataField>FechaInscripcion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>ds_cursos</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\USUARIO\source\repos\Clase POO II\Semana 9\Copia\Gestion_Cursos\Views\Reportes\ds_cursos.xsd</rd:SchemaPath>
+        <rd:TableName>dtCursos</rd:TableName>
+        <rd:TableAdapterFillMethod />
+        <rd:TableAdapterGetDataMethod />
+        <rd:TableAdapterName />
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <EmbeddedImages>
+    <EmbeddedImage Name="result_school_experiment_science_test_icon_220061">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>978b8d98-b8b7-4cce-a6e4-30857087f3fe</rd:ReportID>
+</Report>

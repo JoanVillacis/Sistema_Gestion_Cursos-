@@ -1,0 +1,155 @@
+﻿using Gestion_Cursos.Controllers;
+using Gestion_Cursos.Models;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Globalization;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Gestion_Cursos.Views.Estudiantes
+{
+    public partial class frm_listar_Estudiantes : Form
+    {
+        private readonly Estudiante_Controller _estudianteController = new Estudiante_Controller();
+        private List<Estudiante> _estudiantes = new List<Estudiante>();
+
+        public frm_listar_Estudiantes()
+        {
+            InitializeComponent();
+        }
+
+        private void frm_listar_Estudiantes_Load(object sender, EventArgs e)
+        {
+            CargarLista();
+        }
+
+        private void CargarLista()
+        {
+            _estudiantes = _estudianteController.todos();
+
+            var lista = new List<object>();
+            // Encabezado
+            lista.Add(new { EstudianteId = -1, Fila = "Nombre Completo | Cédula | Email | Fecha Registro" });
+
+            foreach (var s in _estudiantes)
+            {
+                var nombreCompleto = string.Concat(s.Nombre, " ", s.Apellido).Trim();
+                var cedula = s.Cedula ?? "-";
+                var email = string.IsNullOrWhiteSpace(s.Email) ? "-" : s.Email;
+                var fecha = s.FechaRegistro.HasValue ? s.FechaRegistro.Value.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture) : "-";
+                var fila = $"{nombreCompleto} | {cedula} | {email} | {fecha}";
+                lista.Add(new { EstudianteId = s.EstudianteId, Fila = fila });
+            }
+
+            lst_lista_estudiantes.DataSource = lista;
+            lst_lista_estudiantes.ValueMember = "EstudianteId";
+            lst_lista_estudiantes.DisplayMember = "Fila";
+            lst_lista_estudiantes.ClearSelected();
+        }
+
+        private void lst_lista_estudiantes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //no se usa
+        }
+
+        private void btn_agregar_Click(object sender, EventArgs e)
+        {
+            var frm = new frm_agregar_Estudiante();
+            var res = frm.ShowDialog();
+            if (res == DialogResult.OK)
+            {
+                CargarLista();
+            }
+        }
+
+        private void btn_editar_Click(object sender, EventArgs e)
+        {
+            if (lst_lista_estudiantes.SelectedItem == null)
+            {
+                MessageBox.Show("Seleccione un estudiante de la lista para editar.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            int id;
+            try
+            {
+                id = (int)lst_lista_estudiantes.SelectedValue;
+            }
+            catch
+            {
+                MessageBox.Show("Seleccione un estudiante válido para editar.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (id == -1)
+            {
+                MessageBox.Show("Seleccione un estudiante (no el encabezado) para editar.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            var frm = new frm_editar_Estudiante(id);
+            var res = frm.ShowDialog();
+            if (res == DialogResult.OK)
+            {
+                CargarLista();
+            }
+        }
+
+        private void btn_eliminar_Click(object sender, EventArgs e)
+        {
+            if (lst_lista_estudiantes.SelectedItem == null)
+            {
+                MessageBox.Show("Seleccione un estudiante de la lista para eliminar.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            int id;
+            try
+            {
+                id = (int)lst_lista_estudiantes.SelectedValue;
+            }
+            catch
+            {
+                MessageBox.Show("Seleccione un estudiante válido para eliminar.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (id == -1)
+            {
+                MessageBox.Show("Seleccione un estudiante (no el encabezado) para eliminar.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            var estudiante = _estudiantes.FirstOrDefault(s => s.EstudianteId == id);
+            if (estudiante == null)
+            {
+                MessageBox.Show("Estudiante no encontrado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            var confirm = MessageBox.Show($"¿Desea eliminar al estudiante {estudiante.Nombre} {estudiante.Apellido}?", "Confirmar eliminación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (confirm != DialogResult.Yes) return;
+
+            var res = _estudianteController.eliminar(id);
+            if (res == "ok")
+            {
+                MessageBox.Show("Estudiante eliminado correctamente.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                CargarLista();
+            }
+            else
+            {
+                MessageBox.Show(res, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btn_salir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+    }
+}

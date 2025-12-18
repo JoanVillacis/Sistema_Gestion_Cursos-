@@ -1,0 +1,27 @@
+﻿
+namespace Gestion_Cursos.Controllers
+{
+    public class Login_Controller
+    {
+        /*private readonly AppDbContext _Auth_Dbcontext = new AppDbContext();
+        public Usuario login(Usuario login)
+        {
+            if (login == null) return null;
+            if (string.IsNullOrWhiteSpace(login.Correo) || string.IsNullOrWhiteSpace(login.Contrasenia))
+                return null;
+            try
+            {
+                // Buscar usuario por correo y contraseña, y que esté activo
+                var usuario = _Auth_Dbcontext.Usuarios
+                    .FirstOrDefault(u => u.Correo == login.Correo
+                    && u.Contrasenia == login.Contrasenia
+                    && u.Activo == true);
+                return usuario;
+            }
+            catch
+            {
+                return null;
+            }
+        }*/
+    }
+}

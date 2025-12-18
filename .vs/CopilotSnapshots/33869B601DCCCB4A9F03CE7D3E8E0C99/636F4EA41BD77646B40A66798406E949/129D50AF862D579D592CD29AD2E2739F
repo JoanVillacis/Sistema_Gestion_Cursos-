@@ -1,0 +1,173 @@
+﻿using Gestion_Cursos.Controllers;
+using Gestion_Cursos.Models;
+using System;
+using System.Text.RegularExpressions;
+using System.Windows.Forms;
+
+namespace Gestion_Cursos.Views.Profesores
+{
+    public partial class frm_editar_Profesor : Form
+    {
+        private readonly Profesor_Controller _profesorController = new Profesor_Controller();
+        private readonly Auth_Controller _authController = new Auth_Controller();
+        private Profesore _profesorActual;
+
+        public frm_editar_Profesor()
+        {
+            InitializeComponent();
+        }
+
+        public void CargarProfesor(int id)
+        {
+            _profesorActual = _profesorController.uno(id);
+            if (_profesorActual == null)
+            {
+                MessageBox.Show("Profesor no encontrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Close();
+                return;
+            }
+
+            txt_Nombres.Text = _profesorActual.Nombre;
+            txt_Apellidos.Text = _profesorActual.Apellido;
+            txt_Cedula.Text = _profesorActual.Cedula;
+
+            if (_profesorActual.FechaNacimiento.HasValue)
+            {
+                // Convertir DateOnly a DateTime para el DateTimePicker
+                dtp_Fecha_Nacimiento.Value = _profesorActual.FechaNacimiento.Value.ToDateTime(new TimeOnly(0));
+            }
+            else
+            {
+                dtp_Fecha_Nacimiento.Value = DateTime.Now;
+            }
+
+            // Usar combos para género y especialidad si existen
+            if (!string.IsNullOrWhiteSpace(_profesorActual.Genero) && cmb_Genero.Items.Contains(_profesorActual.Genero))
+                cmb_Genero.SelectedItem = _profesorActual.Genero;
+            else
+                cmb_Genero.SelectedIndex = -1;
+
+            txt_Ciudad.Text = _profesorActual.Ciudad;
+            txt_Direccion.Text = _profesorActual.Direccion;
+            txt_Correo.Text = _profesorActual.Email;
+            txt_Telefono.Text = _profesorActual.Telefono;
+
+            if (!string.IsNullOrWhiteSpace(_profesorActual.Especialidad) && cmb_Especialidad.Items.Contains(_profesorActual.Especialidad))
+                cmb_Especialidad.SelectedItem = _profesorActual.Especialidad;
+            else
+                cmb_Especialidad.SelectedIndex = -1;
+        }
+
+        private void dtp_Fecha_Nacimiento_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Guardar_Click(object sender, EventArgs e)
+        {
+            if (_profesorActual == null)
+            {
+                MessageBox.Show("No hay profesor cargado para guardar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txt_Nombres.Text) || string.IsNullOrWhiteSpace(txt_Apellidos.Text))
+            {
+                MessageBox.Show("Debe completar nombres y apellidos", "Datos incompletos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            _profesorActual.Nombre = txt_Nombres.Text.Trim();
+            _profesorActual.Apellido = txt_Apellidos.Text.Trim();
+            _profesorActual.Cedula = txt_Cedula.Text.Trim();
+            _profesorActual.FechaNacimiento = DateOnly.FromDateTime(dtp_Fecha_Nacimiento.Value.Date);
+            _profesorActual.Genero = cmb_Genero.SelectedItem?.ToString();
+            _profesorActual.Ciudad = txt_Ciudad.Text.Trim();
+            _profesorActual.Direccion = txt_Direccion.Text.Trim();
+            _profesorActual.Email = txt_Correo.Text.Trim();
+            _profesorActual.Telefono = txt_Telefono.Text.Trim();
+            _profesorActual.Especialidad = cmb_Especialidad.SelectedItem?.ToString();
+
+            var res = _profesorController.actualizar(_profesorActual);
+            if (res == "ok")
+            {
+                MessageBox.Show("Profesor actualizado correctamente.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show(res, "Error al actualizar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btn_Cancelar_Click(object sender, EventArgs e)
+        {
+            if (_profesorActual != null)
+            {
+                txt_Nombres.Text = _profesorActual.Nombre;
+                txt_Apellidos.Text = _profesorActual.Apellido;
+                txt_Cedula.Text = _profesorActual.Cedula;
+                txt_Correo.Text = _profesorActual.Email;
+                if (!string.IsNullOrWhiteSpace(_profesorActual.Genero) && cmb_Genero.Items.Contains(_profesorActual.Genero))
+                    cmb_Genero.SelectedItem = _profesorActual.Genero;
+                else
+                    cmb_Genero.SelectedIndex = -1;
+
+                txt_Ciudad.Text = _profesorActual.Ciudad;
+                txt_Direccion.Text = _profesorActual.Direccion;
+                txt_Telefono.Text = _profesorActual.Telefono;
+                if (!string.IsNullOrWhiteSpace(_profesorActual.Especialidad) && cmb_Especialidad.Items.Contains(_profesorActual.Especialidad))
+                    cmb_Especialidad.SelectedItem = _profesorActual.Especialidad;
+                else
+                    cmb_Especialidad.SelectedIndex = -1;
+
+                if (_profesorActual.FechaNacimiento.HasValue)
+                    dtp_Fecha_Nacimiento.Value = _profesorActual.FechaNacimiento.Value.ToDateTime(new TimeOnly(0));
+                else
+                    dtp_Fecha_Nacimiento.Value = DateTime.Now;
+            }
+        }
+
+        private void txt_Cedula_Leave(object sender, EventArgs e)
+        {
+            var ced = txt_Cedula.Text.Trim();
+            if (string.IsNullOrWhiteSpace(ced)) return;
+            if (ced.Length != 10 || !long.TryParse(ced, out _))
+            {
+                MessageBox.Show("La cédula debe tener 10 dígitos", "Cédula inválida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txt_Cedula.Focus();
+                return;
+            }
+            if (!_authController.VerificaCedula(ced.ToCharArray()))
+            {
+                MessageBox.Show("Cédula inválida según algoritmo", "Cédula inválida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txt_Cedula.Focus();
+                return;
+            }
+            if (_profesorController.CedulaExists(ced) && _profesorActual?.Cedula != ced)
+            {
+                MessageBox.Show("La cédula ya se encuentra registrada", "Cédula duplicada", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txt_Cedula.Text = string.Empty;
+                txt_Cedula.Focus();
+            }
+        }
+
+        private void txt_Correo_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txt_Correo.Text)) return;
+            if (!Regex.IsMatch(txt_Correo.Text, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+            {
+                MessageBox.Show("El correo no tiene un formato válido", "Correo inválido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txt_Correo.Text = string.Empty;
+                txt_Correo.Focus();
+                return;
+            }
+            if (_profesorController.EmailExists(txt_Correo.Text.Trim()) && _profesorActual?.Email != txt_Correo.Text.Trim())
+            {
+                MessageBox.Show("El correo ya se encuentra registrado", "Correo duplicado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txt_Correo.Text = string.Empty;
+                txt_Correo.Focus();
+            }
+        }
+    }
+}

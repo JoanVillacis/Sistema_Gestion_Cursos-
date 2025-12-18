@@ -1,0 +1,674 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|c:\\users\\usuario\\source\\repos\\clase poo ii\\semana 9\\copia\\gestion_cursos\\views\\usuarios\\frm_listar_usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|solutionrelative:views\\usuarios\\frm_listar_usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|c:\\users\\usuario\\source\\repos\\clase poo ii\\semana 9\\copia\\gestion_cursos\\views\\usuarios\\frm_listar_usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|solutionrelative:views\\usuarios\\frm_listar_usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|c:\\users\\usuario\\source\\repos\\clase poo ii\\semana 9\\copia\\gestion_cursos\\views\\usuarios\\frm_editar_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|solutionrelative:views\\usuarios\\frm_editar_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|c:\\users\\usuario\\source\\repos\\clase poo ii\\semana 9\\copia\\gestion_cursos\\views\\usuarios\\frm_editar_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|solutionrelative:views\\usuarios\\frm_editar_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|c:\\users\\usuario\\source\\repos\\clase poo ii\\semana 9\\copia\\gestion_cursos\\views\\usuarios\\frm_agregar_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|solutionrelative:views\\usuarios\\frm_agregar_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|c:\\users\\usuario\\source\\repos\\clase poo ii\\semana 9\\copia\\gestion_cursos\\views\\usuarios\\frm_agregar_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|solutionrelative:views\\usuarios\\frm_agregar_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|c:\\users\\usuario\\source\\repos\\clase poo ii\\semana 9\\copia\\gestion_cursos\\views\\profesores\\frm_listar_profesores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|solutionrelative:views\\profesores\\frm_listar_profesores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|c:\\users\\usuario\\source\\repos\\clase poo ii\\semana 9\\copia\\gestion_cursos\\views\\reportes\\frm_reporte_cursos_est.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|solutionrelative:views\\reportes\\frm_reporte_cursos_est.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|c:\\users\\usuario\\source\\repos\\clase poo ii\\semana 9\\copia\\gestion_cursos\\views\\reportes\\frm_reporte_cursos_est.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|solutionrelative:views\\reportes\\frm_reporte_cursos_est.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|c:\\users\\usuario\\source\\repos\\clase poo ii\\semana 9\\copia\\gestion_cursos\\views\\profesores\\frm_listar_profesores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|solutionrelative:views\\profesores\\frm_listar_profesores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|c:\\users\\usuario\\source\\repos\\clase poo ii\\semana 9\\copia\\gestion_cursos\\views\\profesores\\frm_editar_profesor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|solutionrelative:views\\profesores\\frm_editar_profesor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|c:\\users\\usuario\\source\\repos\\clase poo ii\\semana 9\\copia\\gestion_cursos\\views\\profesores\\frm_editar_profesor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|solutionrelative:views\\profesores\\frm_editar_profesor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|c:\\users\\usuario\\source\\repos\\clase poo ii\\semana 9\\copia\\gestion_cursos\\views\\profesores\\frm_agregar_profesor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|solutionrelative:views\\profesores\\frm_agregar_profesor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|c:\\users\\usuario\\source\\repos\\clase poo ii\\semana 9\\copia\\gestion_cursos\\views\\profesores\\frm_agregar_profesor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|solutionrelative:views\\profesores\\frm_agregar_profesor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|c:\\users\\usuario\\source\\repos\\clase poo ii\\semana 9\\copia\\gestion_cursos\\views\\principal\\frm_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|solutionrelative:views\\principal\\frm_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|c:\\users\\usuario\\source\\repos\\clase poo ii\\semana 9\\copia\\gestion_cursos\\views\\principal\\frm_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|solutionrelative:views\\principal\\frm_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|c:\\users\\usuario\\source\\repos\\clase poo ii\\semana 9\\copia\\gestion_cursos\\views\\inscripciones\\frm_listar_incripciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|solutionrelative:views\\inscripciones\\frm_listar_incripciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|c:\\users\\usuario\\source\\repos\\clase poo ii\\semana 9\\copia\\gestion_cursos\\views\\inscripciones\\frm_listar_incripciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|solutionrelative:views\\inscripciones\\frm_listar_incripciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|c:\\users\\usuario\\source\\repos\\clase poo ii\\semana 9\\copia\\gestion_cursos\\views\\inscripciones\\frm_editar_incripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|solutionrelative:views\\inscripciones\\frm_editar_incripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|c:\\users\\usuario\\source\\repos\\clase poo ii\\semana 9\\copia\\gestion_cursos\\views\\inscripciones\\frm_editar_incripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|solutionrelative:views\\inscripciones\\frm_editar_incripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|c:\\users\\usuario\\source\\repos\\clase poo ii\\semana 9\\copia\\gestion_cursos\\views\\inscripciones\\frm_agregar_incripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|solutionrelative:views\\inscripciones\\frm_agregar_incripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|c:\\users\\usuario\\source\\repos\\clase poo ii\\semana 9\\copia\\gestion_cursos\\views\\inscripciones\\frm_agregar_incripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|solutionrelative:views\\inscripciones\\frm_agregar_incripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|c:\\users\\usuario\\source\\repos\\clase poo ii\\semana 9\\copia\\gestion_cursos\\views\\estudiantes\\frm_listar_estudiantes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|solutionrelative:views\\estudiantes\\frm_listar_estudiantes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|c:\\users\\usuario\\source\\repos\\clase poo ii\\semana 9\\copia\\gestion_cursos\\views\\estudiantes\\frm_listar_estudiantes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|solutionrelative:views\\estudiantes\\frm_listar_estudiantes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|c:\\users\\usuario\\source\\repos\\clase poo ii\\semana 9\\copia\\gestion_cursos\\views\\estudiantes\\frm_editar_estudiante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|solutionrelative:views\\estudiantes\\frm_editar_estudiante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|c:\\users\\usuario\\source\\repos\\clase poo ii\\semana 9\\copia\\gestion_cursos\\views\\estudiantes\\frm_editar_estudiante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|solutionrelative:views\\estudiantes\\frm_editar_estudiante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|c:\\users\\usuario\\source\\repos\\clase poo ii\\semana 9\\copia\\gestion_cursos\\views\\estudiantes\\frm_agregar_estudiante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|solutionrelative:views\\estudiantes\\frm_agregar_estudiante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|c:\\users\\usuario\\source\\repos\\clase poo ii\\semana 9\\copia\\gestion_cursos\\views\\estudiantes\\frm_agregar_estudiante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|solutionrelative:views\\estudiantes\\frm_agregar_estudiante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|c:\\users\\usuario\\source\\repos\\clase poo ii\\semana 9\\copia\\gestion_cursos\\views\\cursos\\frm_listar_cursos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|solutionrelative:views\\cursos\\frm_listar_cursos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|c:\\users\\usuario\\source\\repos\\clase poo ii\\semana 9\\copia\\gestion_cursos\\views\\cursos\\frm_listar_cursos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|solutionrelative:views\\cursos\\frm_listar_cursos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|c:\\users\\usuario\\source\\repos\\clase poo ii\\semana 9\\copia\\gestion_cursos\\views\\cursos\\frm_editar_curso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|solutionrelative:views\\cursos\\frm_editar_curso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|c:\\users\\usuario\\source\\repos\\clase poo ii\\semana 9\\copia\\gestion_cursos\\views\\cursos\\frm_editar_curso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|solutionrelative:views\\cursos\\frm_editar_curso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|c:\\users\\usuario\\source\\repos\\clase poo ii\\semana 9\\copia\\gestion_cursos\\views\\cursos\\frm_agregar_curso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|solutionrelative:views\\cursos\\frm_agregar_curso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|c:\\users\\usuario\\source\\repos\\clase poo ii\\semana 9\\copia\\gestion_cursos\\views\\cursos\\frm_agregar_curso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|solutionrelative:views\\cursos\\frm_agregar_curso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|c:\\users\\usuario\\source\\repos\\clase poo ii\\semana 9\\copia\\gestion_cursos\\controllers\\usuario_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|solutionrelative:controllers\\usuario_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|c:\\users\\usuario\\source\\repos\\clase poo ii\\semana 9\\copia\\gestion_cursos\\controllers\\inscripcion_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|solutionrelative:controllers\\inscripcion_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|c:\\users\\usuario\\source\\repos\\clase poo ii\\semana 9\\copia\\gestion_cursos\\controllers\\estudiante_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|solutionrelative:controllers\\estudiante_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|c:\\users\\usuario\\source\\repos\\clase poo ii\\semana 9\\copia\\gestion_cursos\\controllers\\curso_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|solutionrelative:controllers\\curso_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|c:\\users\\usuario\\source\\repos\\clase poo ii\\semana 9\\copia\\gestion_cursos\\controllers\\auth_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00F22E97-D7F4-4D42-98FF-5518ECE0046E}|Gestion_Cursos.csproj|solutionrelative:controllers\\auth_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frm_listar_Usuarios.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Usuarios\\frm_listar_Usuarios.cs",
+              "RelativeDocumentMoniker": "Views\\Usuarios\\frm_listar_Usuarios.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Usuarios\\frm_listar_Usuarios.cs",
+              "RelativeToolTip": "Views\\Usuarios\\frm_listar_Usuarios.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAswD0AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T22:49:59.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frm_listar_Usuarios.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Usuarios\\frm_listar_Usuarios.cs",
+              "RelativeDocumentMoniker": "Views\\Usuarios\\frm_listar_Usuarios.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Usuarios\\frm_listar_Usuarios.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Views\\Usuarios\\frm_listar_Usuarios.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T22:49:57.562Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frm_editar_Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Usuarios\\frm_editar_Usuario.cs",
+              "RelativeDocumentMoniker": "Views\\Usuarios\\frm_editar_Usuario.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Usuarios\\frm_editar_Usuario.cs",
+              "RelativeToolTip": "Views\\Usuarios\\frm_editar_Usuario.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T22:49:34.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frm_editar_Usuario.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Usuarios\\frm_editar_Usuario.cs",
+              "RelativeDocumentMoniker": "Views\\Usuarios\\frm_editar_Usuario.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Usuarios\\frm_editar_Usuario.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Views\\Usuarios\\frm_editar_Usuario.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T22:49:29.724Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frm_agregar_Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Usuarios\\frm_agregar_Usuario.cs",
+              "RelativeDocumentMoniker": "Views\\Usuarios\\frm_agregar_Usuario.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Usuarios\\frm_agregar_Usuario.cs",
+              "RelativeToolTip": "Views\\Usuarios\\frm_agregar_Usuario.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T22:49:15.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "frm_agregar_Usuario.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Usuarios\\frm_agregar_Usuario.cs",
+              "RelativeDocumentMoniker": "Views\\Usuarios\\frm_agregar_Usuario.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Usuarios\\frm_agregar_Usuario.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Views\\Usuarios\\frm_agregar_Usuario.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T22:49:13.686Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "frm_reporte_Cursos_Est.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Reportes\\frm_reporte_Cursos_Est.cs",
+              "RelativeDocumentMoniker": "Views\\Reportes\\frm_reporte_Cursos_Est.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Reportes\\frm_reporte_Cursos_Est.cs",
+              "RelativeToolTip": "Views\\Reportes\\frm_reporte_Cursos_Est.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAYwF8AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T22:42:36.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "frm_reporte_Cursos_Est.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Reportes\\frm_reporte_Cursos_Est.cs",
+              "RelativeDocumentMoniker": "Views\\Reportes\\frm_reporte_Cursos_Est.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Reportes\\frm_reporte_Cursos_Est.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Views\\Reportes\\frm_reporte_Cursos_Est.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T22:42:33.458Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "frm_listar_Profesores.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Profesores\\frm_listar_Profesores.cs",
+              "RelativeDocumentMoniker": "Views\\Profesores\\frm_listar_Profesores.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Profesores\\frm_listar_Profesores.cs",
+              "RelativeToolTip": "Views\\Profesores\\frm_listar_Profesores.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAowI8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T22:18:23.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "frm_listar_Profesores.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Profesores\\frm_listar_Profesores.cs",
+              "RelativeDocumentMoniker": "Views\\Profesores\\frm_listar_Profesores.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Profesores\\frm_listar_Profesores.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Views\\Profesores\\frm_listar_Profesores.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T22:18:21.016Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "frm_editar_Profesor.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Profesores\\frm_editar_Profesor.cs",
+              "RelativeDocumentMoniker": "Views\\Profesores\\frm_editar_Profesor.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Profesores\\frm_editar_Profesor.cs",
+              "RelativeToolTip": "Views\\Profesores\\frm_editar_Profesor.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAwwKoAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T22:17:56.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "frm_editar_Profesor.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Profesores\\frm_editar_Profesor.cs",
+              "RelativeDocumentMoniker": "Views\\Profesores\\frm_editar_Profesor.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Profesores\\frm_editar_Profesor.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Views\\Profesores\\frm_editar_Profesor.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T22:17:50.477Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "frm_agregar_Profesor.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Profesores\\frm_agregar_Profesor.cs",
+              "RelativeDocumentMoniker": "Views\\Profesores\\frm_agregar_Profesor.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Profesores\\frm_agregar_Profesor.cs",
+              "RelativeToolTip": "Views\\Profesores\\frm_agregar_Profesor.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAwwDIAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T22:17:25.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "frm_agregar_Profesor.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Profesores\\frm_agregar_Profesor.cs",
+              "RelativeDocumentMoniker": "Views\\Profesores\\frm_agregar_Profesor.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Profesores\\frm_agregar_Profesor.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Views\\Profesores\\frm_agregar_Profesor.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T22:17:21.888Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "frm_dashboard.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Principal\\frm_dashboard.cs",
+              "RelativeDocumentMoniker": "Views\\Principal\\frm_dashboard.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Principal\\frm_dashboard.cs",
+              "RelativeToolTip": "Views\\Principal\\frm_dashboard.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T22:17:15.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "frm_dashboard.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Principal\\frm_dashboard.cs",
+              "RelativeDocumentMoniker": "Views\\Principal\\frm_dashboard.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Principal\\frm_dashboard.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Views\\Principal\\frm_dashboard.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T22:17:12.981Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "frm_listar_Incripciones.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Inscripciones\\frm_listar_Incripciones.cs",
+              "RelativeDocumentMoniker": "Views\\Inscripciones\\frm_listar_Incripciones.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Inscripciones\\frm_listar_Incripciones.cs",
+              "RelativeToolTip": "Views\\Inscripciones\\frm_listar_Incripciones.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T22:17:06.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "frm_listar_Incripciones.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Inscripciones\\frm_listar_Incripciones.cs",
+              "RelativeDocumentMoniker": "Views\\Inscripciones\\frm_listar_Incripciones.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Inscripciones\\frm_listar_Incripciones.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Views\\Inscripciones\\frm_listar_Incripciones.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T22:17:03.976Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "frm_editar_Incripcion.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Inscripciones\\frm_editar_Incripcion.cs",
+              "RelativeDocumentMoniker": "Views\\Inscripciones\\frm_editar_Incripcion.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Inscripciones\\frm_editar_Incripcion.cs",
+              "RelativeToolTip": "Views\\Inscripciones\\frm_editar_Incripcion.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T22:16:51.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "frm_editar_Incripcion.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Inscripciones\\frm_editar_Incripcion.cs",
+              "RelativeDocumentMoniker": "Views\\Inscripciones\\frm_editar_Incripcion.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Inscripciones\\frm_editar_Incripcion.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Views\\Inscripciones\\frm_editar_Incripcion.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T22:16:48.11Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "frm_agregar_Incripcion.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Inscripciones\\frm_agregar_Incripcion.cs",
+              "RelativeDocumentMoniker": "Views\\Inscripciones\\frm_agregar_Incripcion.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Inscripciones\\frm_agregar_Incripcion.cs",
+              "RelativeToolTip": "Views\\Inscripciones\\frm_agregar_Incripcion.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T22:16:37.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "frm_agregar_Incripcion.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Inscripciones\\frm_agregar_Incripcion.cs",
+              "RelativeDocumentMoniker": "Views\\Inscripciones\\frm_agregar_Incripcion.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Inscripciones\\frm_agregar_Incripcion.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Views\\Inscripciones\\frm_agregar_Incripcion.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T22:16:35.797Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "frm_listar_Estudiantes.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Estudiantes\\frm_listar_Estudiantes.cs",
+              "RelativeDocumentMoniker": "Views\\Estudiantes\\frm_listar_Estudiantes.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Estudiantes\\frm_listar_Estudiantes.cs",
+              "RelativeToolTip": "Views\\Estudiantes\\frm_listar_Estudiantes.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAwwDoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T22:16:10.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "frm_listar_Estudiantes.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Estudiantes\\frm_listar_Estudiantes.cs",
+              "RelativeDocumentMoniker": "Views\\Estudiantes\\frm_listar_Estudiantes.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Estudiantes\\frm_listar_Estudiantes.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Views\\Estudiantes\\frm_listar_Estudiantes.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T22:16:08.68Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "frm_editar_Estudiante.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Estudiantes\\frm_editar_Estudiante.cs",
+              "RelativeDocumentMoniker": "Views\\Estudiantes\\frm_editar_Estudiante.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Estudiantes\\frm_editar_Estudiante.cs",
+              "RelativeToolTip": "Views\\Estudiantes\\frm_editar_Estudiante.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T22:15:43.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "frm_editar_Estudiante.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Estudiantes\\frm_editar_Estudiante.cs",
+              "RelativeDocumentMoniker": "Views\\Estudiantes\\frm_editar_Estudiante.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Estudiantes\\frm_editar_Estudiante.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Views\\Estudiantes\\frm_editar_Estudiante.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T22:15:40.214Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "frm_agregar_Estudiante.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Estudiantes\\frm_agregar_Estudiante.cs",
+              "RelativeDocumentMoniker": "Views\\Estudiantes\\frm_agregar_Estudiante.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Estudiantes\\frm_agregar_Estudiante.cs",
+              "RelativeToolTip": "Views\\Estudiantes\\frm_agregar_Estudiante.cs",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T22:15:32.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "frm_agregar_Estudiante.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Estudiantes\\frm_agregar_Estudiante.cs",
+              "RelativeDocumentMoniker": "Views\\Estudiantes\\frm_agregar_Estudiante.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Estudiantes\\frm_agregar_Estudiante.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Views\\Estudiantes\\frm_agregar_Estudiante.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T22:15:28.935Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "frm_listar_Cursos.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Cursos\\frm_listar_Cursos.cs",
+              "RelativeDocumentMoniker": "Views\\Cursos\\frm_listar_Cursos.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Cursos\\frm_listar_Cursos.cs",
+              "RelativeToolTip": "Views\\Cursos\\frm_listar_Cursos.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T22:15:21.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "frm_listar_Cursos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Cursos\\frm_listar_Cursos.cs",
+              "RelativeDocumentMoniker": "Views\\Cursos\\frm_listar_Cursos.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Cursos\\frm_listar_Cursos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Views\\Cursos\\frm_listar_Cursos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T22:15:18.294Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "frm_editar_Curso.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Cursos\\frm_editar_Curso.cs",
+              "RelativeDocumentMoniker": "Views\\Cursos\\frm_editar_Curso.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Cursos\\frm_editar_Curso.cs",
+              "RelativeToolTip": "Views\\Cursos\\frm_editar_Curso.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T22:15:05.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "frm_editar_Curso.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Cursos\\frm_editar_Curso.cs",
+              "RelativeDocumentMoniker": "Views\\Cursos\\frm_editar_Curso.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Cursos\\frm_editar_Curso.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Views\\Cursos\\frm_editar_Curso.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T22:15:03.347Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "frm_agregar_Curso.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Cursos\\frm_agregar_Curso.cs",
+              "RelativeDocumentMoniker": "Views\\Cursos\\frm_agregar_Curso.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Cursos\\frm_agregar_Curso.cs",
+              "RelativeToolTip": "Views\\Cursos\\frm_agregar_Curso.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAowBcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T22:14:49.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "frm_agregar_Curso.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Cursos\\frm_agregar_Curso.cs",
+              "RelativeDocumentMoniker": "Views\\Cursos\\frm_agregar_Curso.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Views\\Cursos\\frm_agregar_Curso.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Views\\Cursos\\frm_agregar_Curso.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T22:14:45.854Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Usuario_Controller.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Controllers\\Usuario_Controller.cs",
+              "RelativeDocumentMoniker": "Controllers\\Usuario_Controller.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Controllers\\Usuario_Controller.cs",
+              "RelativeToolTip": "Controllers\\Usuario_Controller.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T22:14:30.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Inscripcion_Controller.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Controllers\\Inscripcion_Controller.cs",
+              "RelativeDocumentMoniker": "Controllers\\Inscripcion_Controller.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Controllers\\Inscripcion_Controller.cs",
+              "RelativeToolTip": "Controllers\\Inscripcion_Controller.cs",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T22:14:09.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Estudiante_Controller.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Controllers\\Estudiante_Controller.cs",
+              "RelativeDocumentMoniker": "Controllers\\Estudiante_Controller.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Controllers\\Estudiante_Controller.cs",
+              "RelativeToolTip": "Controllers\\Estudiante_Controller.cs",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T22:14:01.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Curso_Controller.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Controllers\\Curso_Controller.cs",
+              "RelativeDocumentMoniker": "Controllers\\Curso_Controller.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Controllers\\Curso_Controller.cs",
+              "RelativeToolTip": "Controllers\\Curso_Controller.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T22:13:54.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Auth_Controller.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Controllers\\Auth_Controller.cs",
+              "RelativeDocumentMoniker": "Controllers\\Auth_Controller.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\source\\repos\\Clase POO II\\Semana 9\\Copia\\Gestion_Cursos\\Controllers\\Auth_Controller.cs",
+              "RelativeToolTip": "Controllers\\Auth_Controller.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T22:13:45.204Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
